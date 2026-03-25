@@ -19,8 +19,10 @@ This skill enforces project documentation, planning, and automation workflows.
 
 ## 3. 操作脚本化 (Scripts)
 
-*   所有重复性任务（如构建、部署、数据清洗、Lint 检查）必须编写 Node.js 或 Shell 脚本，统一放入 `scripts/` 目录。
-*   **调用方式**: 必须通过 `npm run <script>` 形式调用。
+*   **标准构建**: 使用框架默认命令（如 `npm run dev/build`），无需额外脚本。
+*   **复杂构建场景**: 当需要预处理、多步骤构建、环境差异化处理时，必须编写 Node.js 或 Shell 脚本，统一放入 `scripts/` 目录。
+*   **重复性任务**: 如部署、数据清洗、批量处理、复杂 Lint 检查等，也应编写脚本。
+*   **调用方式**: 通过 `npm run <script>` 形式调用。
 *   **环境感知**: 脚本需考虑测试服务器与本地环境的路径映射或环境变量切换。
 
 ## 4. 自说明代码 (Self-Explanatory)

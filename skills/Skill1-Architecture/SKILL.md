@@ -18,7 +18,7 @@ This skill enforces the core architectural and environmental standards for the p
 ## 2. 路由准则 (Routing)
 
 *   **合规工具**: 必须使用官方路由库（Vue 使用 `vue-router`，React 使用 `react-router-dom`）。
-*   **禁止行为**: 严禁使用响应式变量（如 `v-if="page === 'home'"`）手动模拟页面切换。
+*   **禁止行为**: 严禁使用响应式变量（如 `v-if="page === 'home'"`）手动模拟页面跳转。
 
 ## 3. 外链资源引用规范
 
@@ -29,5 +29,5 @@ This skill enforces the core architectural and environmental standards for the p
 
 ## 4. 环境上下文
 
-*   开发环境适配 VS Code。
+*   开发环境适配 vconsole。
 *   需适配测试服务器部署链路。
